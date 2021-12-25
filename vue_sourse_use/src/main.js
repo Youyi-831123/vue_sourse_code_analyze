@@ -1,11 +1,12 @@
 /*
  * @Date: 2021-12-23 10:30:07
  * @LastEditors: youyi
- * @LastEditTime: 2021-12-23 14:07:03
+ * @LastEditTime: 2021-12-25 15:04:02
  */
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import store from './store'
 
 Vue.config.productionTip = false
 
@@ -15,7 +16,8 @@ new Vue({
   // render 函数得到这个 VNode 节点之后，返回给 Vue.js 的 mount 函数，渲染成真实 DOM 节点，并挂载到根节点上。
   render: h => h(App),
   //注入vue实例
-  router
+  router,
+  store
 }).$mount('#app')
 //vue1.0
 // new Vue({
